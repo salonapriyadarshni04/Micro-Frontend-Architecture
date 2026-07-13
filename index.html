@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro-Frontend Architecture Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Main Shell Application (Host)</h1>
+        <p>This dashboard integrates multiple independent micro-frontends.</p>
+    </header>
+    <div class="container">
+        <div class="micro-frontend" id="mfe-auth">
+            <h3>Auth Micro-Frontend</h3>
+            <div id="auth-root"><p>Loading Auth Module...</p></div>
+        </div>
+        <div class="micro-frontend" id="mfe-product">
+            <h3>Product Micro-Frontend</h3>
+            <div id="product-root"><p>Loading Product Module...</p></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
